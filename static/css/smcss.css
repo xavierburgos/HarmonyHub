@@ -1,12 +1,12 @@
 :root {
-    --color-primary: #3D6CB9;   
-    --color-secondary: #6BBE45; 
-    --color-tertiary: #FFD166;  
-    --color-background: #F4F4F4;
-    --color-text: #333; 
-    --color-text-light: #777; 
-}
-
+    --color-primary: #214B7A;   /* Azul marino */
+    --color-secondary: #5B8F47; /* Verde oliva */
+    --color-tertiary: #D1B170;  /* Amarillo suave */
+    --color-background: #F0F0F0; /* Fondo gris claro */
+    --color-text: #333; /* Texto negro */
+    --color-text-light: #777; /* Texto gris claro */
+  }
+  
 
 body {
     margin: 0;
