@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/catcss.css' %}">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'categories' %}">Categorias</a></li>
+                <li><a href="{% url 'posts' %}">Posts</a></li>
+                <li><a href="{% url 'socialmedia' %}">Redes Sociales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <div class="genre-section">
+                <h2 class="genre-title">ROCK</h2>
+                <div class="artist">
+                    <a href="https://es.wikipedia.org/wiki/Queen" target="_blank">
+                        <img src="{% static 'resources/queen.jpg' %}" alt="Queen">
+                        <p class="artist-name">Queen</p>
+                    </a>
+                </div>
+                <div class="artist">
+                    <a href="https://es.wikipedia.org/wiki/Led_Zeppelin" target="_blank">
+                        <img src="{% static 'resources/LedZeppelin.jpg' %}" alt="Led Zeppelin">
+                        <p class="artist-name">Led Zeppelin</p>
+                    </a>
+                </div>
+            </div>
+            <div class="genre-section">
+                <h2 class="genre-title">POP</h2>
+                <div class="artist">
+                    <a href="https://es.wikipedia.org/wiki/Michael_Jackson" target="_blank">
+                        <img src="{% static 'resources/mj.jpg' %}" alt="Michael Jackson">
+                        <p class="artist-name">Michael Jackson</p>
+                    </a>
+                </div>
+                <div class="artist">
+                    <a href="https://es.wikipedia.org/wiki/Madonna" target="_blank">
+                        <img src="{% static 'resources/madonna.jpg' %}" alt="Madonna">
+                        <p class="artist-name">Madonna</p>
+                    </a>
+                </div>
+            </div>
+            <div class="genre-section">
+                <h2 class="genre-title">RAP</h2>
+                <div class="artist">
+                    <a href="https://es.wikipedia.org/wiki/Tupac_Shakur" target="_blank">
+                        <img src="{% static 'resources/2pac.jpg' %}" alt="Tupac Shakur">
+                        <p class="artist-name">Tupac Shakur</p>
+                    </a>
+                </div>
+                <div class="artist">
+                    <a href="https://es.wikipedia.org/wiki/The_Notorious_B.I.G." target="_blank">
+                        <img src="{% static 'resources/NotoriousBIG.jpg' %}" alt="The Notorious B.I.G.">
+                        <p class="artist-name">The Notorious B.I.G.</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <p>Xavier Alberto Burgos Ponce - MRID21066</p>
+    </footer>
+</body>
+</html>

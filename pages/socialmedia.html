@@ -1,0 +1,71 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/smcss.css' %}">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'categories' %}">Categorias</a></li>
+                <li><a href="{% url 'posts' %}">Posts</a></li>
+                <li><a href="{% url 'socialmedia' %}">Redes Sociales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<h1>Para mas informacion visita las siguentes redes</h1>
+
+<div class="gallery">
+    <div class="image">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="{% static 'resources/facebook.png' %}" alt="Imagen 1">
+            <p class="social-name">Facebook</p>
+        </a>
+    </div>
+    <div class="image">
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="{% static 'resources/instagram.png' %}" alt="Imagen 2">
+            <p class="social-name">Instagram</p>
+        </a>
+    </div>
+    <div class="image">
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="{% static 'resources/youtube.png' %}" alt="Imagen 3">
+            <p class="social-name">YouTube</p>
+        </a>
+    </div>
+    <div class="image">
+        <a href="https://www.soundcloud.com/" target="_blank">
+            <img src="{% static 'resources/soundcloud.png' %}" alt="Imagen 4">
+            <p class="social-name">SoundCloud</p>
+        </a>
+      </div>
+    <div class="image">
+        <a href="https://www.spotify.com/" target="_blank">
+            <img src="{% static 'resources/spotify.png' %}" alt="Imagen 5">
+            <p class="social-name">Spotify</p>
+        </a>
+    </div>
+    <div class="image">
+        <a href="https://www.deezer.com/" target="_blank">
+            <img src="{% static 'resources/deezer.png' %}" alt="Imagen 6">
+            <p class="social-name">Deezer</p>
+        </a>
+    </div>    
+    
+  </div>
+
+    </main>
+    <footer>
+        <p>Xavier Alberto Burgos Ponce - MRID21066</p>
+    </footer>
+</body>
+</html>
